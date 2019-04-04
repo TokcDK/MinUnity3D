@@ -99,7 +99,7 @@ static class Program
 						}
 
 #if true
-						if (res != -1)
+						if (res != -1 && outlen > 0 && inlen > outlen)
 							File.Replace(fno, f, null);
 						else
 							File.Delete(fno);
